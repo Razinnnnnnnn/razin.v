@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.nav-link{
+
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+.nav-link:hover{
+    color: white;
+    background-color: black;
+}
+.navbar-brand{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+ .pic{
+      position: absolute;
+      top: 150px; /* Adjust based on navbar */
+      right: 180px;
+      background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent */
+      height: 500px;
+      z-index: -1;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+  
+    .bt1{
+        height: 45px;
+        width: 100px;
+        background-color: brown;
+        color: white;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        border-radius: 5px;
+        text-align: center;
+
+    }
+    .bt1:hover{
+        background-color: rgb(201, 64, 64);
+        transition: 0.5s;
+        color: white;
+    }
+    .bt2{
+        height: 45px;
+        width: 100px;
+        color: brown;
+        background-color: transparent;
+        outline: none;
+        border: 1px solid brown;
+        font-weight: bold;
+        border-radius: 5px;
+        text-align: center;
+        
+
+    }
+    .bt2:hover{
+        background-color: rgb(201, 64, 64);
+         transition: 0.5s;
+         color: white;
+    }
