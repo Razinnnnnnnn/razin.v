@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+
+  <!-- EmailJS CDN -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "wpK9n97ftPsJ6N3cB",
+      });
+    })();
+  </script>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #000;
+      color: #ffffff;
+      margin: 0;
+      padding-top: 70px;
+    }
+
+    .navbar {
+      background-color: #004d40;
+    }
+
+    .navbar .nav-link {
+      color: white !important;
+      margin: 0 10px;
+      transition: background 0.3s;
+    }
+
+    .navbar .nav-link:hover {
+      background-color: #00796b;
+      border-radius: 5px;
+    }
+
+    .main h2 {
+      font-weight: bold;
+      font-size: 2.5rem;
+    }
+
+    .main h5 {
+      color: #3c27c3;
+      border-bottom: 2px solid rgb(224, 130, 229);
+    }
+
+    .bt1, .bt2 {
+      margin-right: 10px;
+      padding: 10px 20px;
+      border: none;
+      color: white;
+      border-radius: 5px;
+    }
+
+    .bt1 {
+      background-color: #00796b;
+    }
+
+    .bt2 {
+      background-color: #004d40;
+    }
+
+    .bt1:hover {
+      background-color: #00bfa5;
+      color: #ffffff;
+      transform: scale(1.05);
+      transition: all 0.3s ease;
+    }
+
+    .pic {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
+      margin-top: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .main-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .main-text {
+        max-width: 50%;
+      }
+
+      .main-image {
+        max-width: 45%;
+      }
+    }
+
+    .progress-bar {
+      animation: loadBar 2s ease-in-out forwards;
+      width: 0;
+    }
+
+    @keyframes loadBar {
+      from { width: 0; }
+      to { width: var(--progress-width); }
+    }
+
+    .card {
+      background-color: #1c1c1c;
+      color: white;
+    }
+
+    .card-img-top {
+      border-radius: 10px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .social-icons a:hover {
+      color: #00bfa5;
+      transform: scale(1.1);
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand text-white" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="#main">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Section -->
+<section id="main" class="py-5">
+  <div class="container">
+    <div class="main-content row">
+      <div class="main-text col-md-6 mb-4" data-aos="fade-right">
+        <h2><small>Hello I'm</small><br>Muhammed Razin.v</h2>
+        <h5 style="border-bottom: 2px solid rgb(224, 130, 229);width: 33%;">Software Developer</h5><br>
+        <a href="#projects" class="bt1 text-decoration-none d-inline-block">My Works</a>
+        <a href="#contact" class="bt1 text-decoration-none">Hire Me</a><br><br>
+
+        <div class="social-icons mb-3" style="font-size: small;">
+          <a href="https://github.com/Razinnnnnnnn" target="_blank" class="text-white me-3"><i class="fab fa-github fa-2x"></i></a>
+          <a href="https://www.linkedin.com/in/muhammed-razin-v-b4605330a" target="_blank" class="text-white me-3"><i class="fab fa-linkedin fa-2x" style="color: #0077B5;"></i></a>
+          <a href="https://instagram.com/razi.n_" target="_blank" class="text-white me-3"><i class="fab fa-instagram fa-2x" style="color: #E1306C;"></i></a>
+          <a href="https://wa.me/919876543210?text=Hi%20Muhammed%20Razin%2C%20I'm%20interested%20in%20your%20portfolio!" target="_blank"><i class="fab fa-whatsapp fa-2x" style="color: #25D366;"></i></a>
+        </div>
+      </div>
+
+      <div class="main-image col-md-6 text-center" data-aos="fade-left">
+        <img src="pics/razi.JPG" alt="Profile" class="pic">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">About Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <p class="text-center">
+          Hello! I'm <strong>Muhammed Razin.v</strong>, a passionate software developer with a love for clean code, modern design, and user experience.
+        </p>
+        <p class="text-center">
+          I specialize in front-end development using HTML, CSS, JavaScript, and Bootstrap. I'm continuously expanding my skill set in full-stack development and new technologies.
+        </p>
+        <p class="text-center">
+          I love exploring tech blogs, solving coding challenges, and working on creative side projects.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5" style="color: #da70d6;" data-aos="fade-up">Skills</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <i class="fab fa-html5 fa-2x text-danger"></i>
+        <h5>HTML</h5>
+        <div class="progress"><div class="progress-bar bg-danger" role="progressbar" style="--progress-width: 90%;">90%</div></div>
+      </div>
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <i class="fab fa-css3-alt fa-2x text-primary"></i>
+        <h5>CSS</h5>
+        <div class="progress"><div class="progress-bar bg-primary" style="--progress-width: 90%;">90%</div></div>
+      </div>
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+        <i class="fab fa-js-square fa-2x text-warning"></i>
+        <h5>JavaScript</h5>
+        <div class="progress"><div class="progress-bar bg-warning" style="--progress-width: 60%;">60%</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-up">Projects</h2>
+    <div class="row">
+      <div class="col-md-6 mb-3" data-aos="zoom-in-up" data-aos-delay="100">
+        <div class="card">
+          <img src="pics/gobi.png" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Clone Website</h5>
+            <p class="card-text">Made using HTML & CSS</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3" data-aos="zoom-in-up" data-aos-delay="200">
+        <div class="card">
+          <img src="pics/bank.png" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Bank Balance Checker</h5>
+            <p class="card-text">To Check The bank Balance</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5" style="background-color: #1c1d1d;">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Me</h2>
+    <form id="contact-form" class="mx-auto" style="max-width: 600px;">
+      <div class="mb-3">
+        <input type="text" class="form-control" name="from_name" placeholder="Your Name" required />
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" name="email_id" placeholder="Your Email" required />
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" name="message" rows="4" placeholder="Your Message" required></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn bt1">Send Message</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- JS Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    emailjs.sendForm("your_service_id", "your_template_id", this)
+      .then(() => {
+        alert("Message Sent Successfully!");
+        this.reset();
+      }, (error) => {
+        console.log("FAILED...", error);
+        alert("Failed to send message.");
+      });
+  });
+</script>
+
+</body>
+</html>
